@@ -1,0 +1,24 @@
+{
+  "name": "todo-app",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "yarn@1.22.22",
+  "workspaces": [
+    "backend",
+    "frontend"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "build": "turbo run build",
+    "clean": "turbo run clean && rm -rf node_modules",
+    "test": "turbo run test",
+    "patch": "pnpm dlx pnpm-patch-i",
+    "watchman": "watchman watch-del './' ; watchman watch-project './'"
+  },
+  "devDependencies": {
+    "turbo": "2.3.3"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

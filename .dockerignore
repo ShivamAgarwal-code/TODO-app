@@ -1,0 +1,15 @@
+.git
+*.pyc
+.env
+venv
+node_modules/
+**/node_modules/
+npm-debug.log
+.turbo/
+**/.turbo/
+build/
+**/build/
+out/
+**/out/
+dist/
+**/dist/
